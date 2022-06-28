@@ -12,12 +12,37 @@ a{
     text-decoration: none;
     color:#fff;
 }
+#preloader{
+  top:0%;
+  background: #000 url(../images/preloader.gif) no-repeat center;
+  height: 100vh;
+  width: 102%;
+  position:fixed;
+  z-index:100;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.pretext{
+  margin-top:30%;
+  margin-left: 10px;
+  color:rgba(255, 251, 0, 0.893);
+  font-size: 1.5rem;
+  font-family: 'Staatliches', cursive;
+  animation: gloww infinite 2s;
+}
+@keyframes gloww{
+  20%{
+    text-shadow:0px 0px 15px rgba(255, 251, 0, 0.893);
+    transform:scale(1.02);
 
+  }
+}
 
 
 
 body{
-    background:url(images/background1.jpg);
+    background:url(../images/background1.jpg);
     height:100vh;
     background-size:cover;
     background-repeat: no-repeat; 
@@ -40,7 +65,7 @@ body{
     filter: drop-shadow(0px 0px 5px #ffee10);
 }
 .navv{
-    margin-top: 1rem;
+    
     width: 100%;
     height:6rem;
     background-color: rgba(0, 0, 0, 0.5);
@@ -63,7 +88,7 @@ ul li a{
     transition: .5s;
     box-shadow: 0 0 5px #ffee10;
     transform: scale(1.1);
-    text-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffffff;
   }
 
 .align-right{
@@ -73,6 +98,7 @@ ul li a{
 .logobig{
     width:40%;
     margin-bottom: 0;
+    animation: beats infinite 2.5s;
 }
 @media(max-width:767px)
 {
@@ -112,7 +138,7 @@ ul li a{
   }
    .btn-menu:hover,  .btn-book:hover {
     background: #ffee00;
-    color: #fff;
+    color: rgb(0, 0, 0);
   }
    .btn-book {
     margin-left: 15px;
@@ -192,6 +218,7 @@ ul li a{
   .b11{
     box-shadow: 0px 0px 5px #ffee00;
     margin-right: 10px;
+    animation: beats infinite 2.5s;
   }
   .b11:hover{
     box-shadow: 0px 0px 10px #ffee00;
@@ -203,4 +230,10 @@ ul li a{
 
         margin-left: 20%;
       }
+  }
+  @keyframes beats{
+    20%{
+      transform:scale(1.05);
+      filter: drop-shadow(0px 0px 2px rgba(234, 255, 0, 0.579));
+    }
   }
