@@ -1,141 +1,229 @@
-*{
-    margin:0;
-    padding:0;
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Smooch&display=swap');
-  @import "./fontawesome/scss/fontawesome.scss";
-  @import "./fontawesome/scss/solid.scss";
-  @import "./fontawesome/scss/brands.scss";
-  
-  a{
-     text-decoration: none;
-     color:#fff;
-  }
-  #preloader{
-   top:0%;
-   background: #000 url(../images/preloader.gif) no-repeat center;
-   height: 100vh;
-   width: 102%;
-   position:fixed;
-   z-index:100;
-   display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-  .pretext{
-   margin-top:30%;
-   margin-left: 10px;
-   color:rgba(255, 251, 0, 0.893);
-   font-size: 1.5rem;
-   font-family: 'Staatliches', cursive;
-   animation: gloww infinite 2s;
-  }
-  @keyframes gloww{
-   20%{
-     text-shadow:0px 0px 15px rgba(255, 251, 0, 0.893);
-     transform:scale(1.02);
-  
-   }
-  }
-  
-  
-  
-  body{
-     background:url(../images/dark2.jpg);
-     height:100vh;
-     background-size:cover;
- 
-  }
-  .overlay{
-     background: rgba(0, 0, 0, 0.3); 
-     height: 100vh;
-  }
-  .nav-link{
-     font-weight: bold;
-  }
-  ::-webkit-scrollbar {
-     display: none;
-     }
-  .logo{
-     width:15rem;
-  }
-  .logo:hover{
-     transition:.5s;
-     filter: drop-shadow(0px 0px 5px #ffee10);
-  }
-  .navv{
-     
-     width: 100%;
-     height:6rem;
-     background-color: rgba(0, 0, 0, 0.5);
-     font-family: 'Staatliches', cursive;
-  }
-  ul li a{
-     transition: 1.5s;
-     color:#ffffff;
-     
-  }
-   
-   ul li a:hover::before {
-     transform: scale(1.1);
-     transition: 1.5s;
-     box-shadow: 0 0 15px #ffee10;
-   }
-   
-   ul li a:hover {
-     color: #ffffff;
-     transition: .5s;
-     box-shadow: 0 0 5px #ffee10;
-     transform: scale(1.1);
-     text-shadow: 0 0 5px #ffffff;
-   }
-  
-.dish{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Smooch&display=swap');
+@import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/brands.scss";
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#preloader {
+    top: 0%;
+    background: #000 url(../images/preloader.gif) no-repeat center;
+    height: 100vh;
+    width: 102%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pretext {
+    margin-top: 30%;
+    margin-left: 10px;
+    color: rgba(255, 251, 0, 0.893);
+    font-size: 1.5rem;
+    font-family: 'Staatliches', cursive;
+    animation: gloww infinite 2s;
+}
+
+@keyframes gloww {
+    20% {
+        text-shadow: 0px 0px 15px rgba(255, 251, 0, 0.893);
+        transform: scale(1.02);
+
+    }
+}
+
+
+
+body {
+    background: url(../images/dark2.jpg);
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.logo {
+    width: 15rem;
+}
+
+.logo:hover {
+    transition: .5s;
+    filter: drop-shadow(0px 0px 5px #ffee10);
+}
+
+.navv {
+
+    width: 100%;
+    height: 6rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Staatliches', cursive;
+}
+
+ul li a {
+    transition: 1.5s;
+    color: #ffffff;
+
+}
+
+ul li a:hover::before {
+    transform: scale(1.1);
+    transition: 1.5s;
+    box-shadow: 0 0 15px #ffee10;
+}
+
+ul li a:hover {
+    color: #ffffff;
+    transition: .5s;
+    box-shadow: 0 0 5px #ffee10;
+    transform: scale(1.1);
+    text-shadow: 0 0 5px #ffffff;
+}
+
+.dish {
     width: 200px;
 }
-.dishes{
+
+.dishes {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
-    width:auto;
-    margin:10px;
+    width: auto;
+    margin: 10px;
     padding: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:rgba(255, 255, 255, 0.157);
+    background: rgba(255, 255, 255, 0.157);
 }
-.boxxx{
-    
+
+.boxxx {
+
     display: flex;
     flex-wrap: wrap;
-    
+
 }
-.dishes p{
+
+.dishes p {
     color: rgb(0, 0, 0);
     font-weight: 600;
 }
-.dishes num{
+
+.dishes num {
     width: 30px;
 }
-.dishes input[type="number"]{
+
+.dishes input[type="number"] {
     background-color: rgba(255, 255, 255, 0.035);
     width: 100px;
 }
-.dishes .btnn{
-    color:#fff;
+
+.dishes .btnn {
+    color: #fff;
     box-shadow: 0px 0px 5px white;
-    transition:0.5s;
+    transition: 0.5s;
 
 }
-.dishes .btn:hover
-{
-    background-color:rgba(255, 255, 255, 0.395);
-    color:#000;
-    
+
+.dishes .btn:hover {
+    background-color: rgba(255, 255, 255, 0.395);
+    color: #000;
+
 }
-.menu{
+
+.menu {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 3%;
+}
+.flexx{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cardss{
+    margin-top: 8%;
+}
+.imagee img{
+    width:300px;
+    transition: 0.3s;
+}
+.imagee{
+    margin:20px;
+    
+}
+.glow{
+    box-shadow: 0px 0px 10px black;
+}
+.glow2{
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.454);
+}
+.btnholder{
+    margin-top: 10px;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  
+}
+.btnholder a{
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.462);
+    font-family: 'Staatliches', cursive;
+    text-decoration: none;
+    color:#ffffff;
+    border-radius:10px;
+    transition: 0.2s;
+
+}
+.btnholder a:hover{
+    color: #ffffff;
+    text-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.454);
+
+}
+.imagee img:hover{
+    transform: scale(1.05);
+
+}
+.imagee a:hover{
+    transform: scale(1.05);
+
+}
+.glow11:hover{
+    box-shadow:0px 0px 10px rgba(0, 119, 255, 0.728);
+}
+.glow22:hover{
+    box-shadow:0px 0px 10px rgba(255, 0, 0, 0.728);
+}
+.glow33:hover{
+    box-shadow:0px 0px 10px rgba(255, 217, 0, 0.728);
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    color:#fff;
+    text-shadow: 0px 0px 10px white;
 }

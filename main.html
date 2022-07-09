@@ -43,9 +43,7 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="helpline.html">Helpline</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="complaint.html">Complaints</a>
-                            </li>
+
 
                         </ul>
                     </div>
@@ -53,114 +51,40 @@
 
         </div>
 
-        <div class="menu">
-            <div class="boxxx">
-            <div class="dishes">
-                <img src="images/dishes/main/biryani.jpg" class="dish">
-                <br><br>
-                <p class="dishname"> Chicken Biryani</p>
-                <p class="dishprice"> ₹200 </p>
-                <p class="available"> Available: 20</p>
-                <input type="number">
-                <br><br>
-                <button type="button" class="btn btnn" id="addToCart-1" onclick="addToCart(1)">
-                    <span class="btnn" aria-hidden="true"></span> ADD TO CART
-                </button>
-
+        <div class="containerbox overflow-hidden">
+            
+            <div class="cardss flexx">
+             <div class="imagee ">
+                 <a href="tiffins.html">
+                 <img src="images/tiffins.jpg" class="glow glow11">
+                 </a>
+                 <br>
+                 <div class="btnholder">
+                 <a href="tiffins.html" class="btnn glow2"> TIFFINS</a>
+             </div>
+             </div>
+             <div class="imagee ">
+                 <a href="main-lunch.html">
+                 <img src="images/lunch.jpg" class="glow glow22">
+                 </a>
+                 <br>
+                 <div class="btnholder">
+                     <a href="main-lunch.html" class="btnn glow2"> LUNCH </a>
+                 </div>
+             </div>
+             <div class="imagee ">
+                 <a href="snacks.html">
+                 <img src="images/snacks.jpg" class="glow glow33">
+                 </a>
+                 <br>
+                 <div class="btnholder">
+                     <a href="snacks.html" class="btnn  glow2" > SNACKS</a>
+                 </div>
+             </div>
             </div>
-            <div class="dishes">
-                <img src="images/dishes/main/biryani.jpg" class="dish">
-                <br><br>
-                <p class="dishname"> Chicken Biryani</p>
-                <p class="dishprice"> ₹200 </p>
-                <p class="available"> Available: 20</p>
-                <input type="number">
-                <br><br>
-                <button type="button" class="btn btnn" id="addToCart-1" onclick="addToCart(1)">
-                    <span class="btnn" aria-hidden="true"></span> ADD TO CART
-                </button>
-
-            </div><div class="dishes">
-                <img src="images/dishes/main/biryani.jpg" class="dish">
-                <br><br>
-                <p class="dishname"> Chicken Biryani</p>
-                <p class="dishprice"> ₹200 </p>
-                <p class="available"> Available: 20</p>
-                <input type="number">
-                <br><br>
-                <button type="button" class="btn btnn" id="addToCart-1" onclick="addToCart(1)">
-                    <span class="btnn" aria-hidden="true"></span> ADD TO CART
-                </button>
-
-            </div><div class="dishes">
-                <img src="images/dishes/main/biryani.jpg" class="dish">
-                <br><br>
-                <p class="dishname"> Chicken Biryani</p>
-                <p class="dishprice"> ₹200 </p>
-                <p class="available"> Available: 20</p>
-                <input type="number">
-                <br><br>
-                <button type="button" class="btn btnn" id="addToCart-1" onclick="addToCart(1)">
-                    <span class="btnn" aria-hidden="true"></span> ADD TO CART
-                </button>
-
-            </div><div class="dishes">
-                <img src="images/dishes/main/biryani.jpg" class="dish">
-                <br><br>
-                <p class="dishname"> Chicken Biryani</p>
-                <p class="dishprice"> ₹200 </p>
-                <p class="available"> Available: 20</p>
-                <input type="number">
-                <br><br>
-                <button type="button" class="btn btnn" id="addToCart-1" onclick="addToCart(1)">
-                    <span class="btnn" aria-hidden="true"></span> ADD TO CART
-                </button>
-
-            </div><div class="dishes">
-                <img src="images/dishes/main/biryani.jpg" class="dish">
-                <br><br>
-                <p class="dishname"> Chicken Biryani</p>
-                <p class="dishprice"> ₹200 </p>
-                <p class="available"> Available: 20</p>
-                <input type="number">
-                <br><br>
-                <button type="button" class="btn btnn" id="addToCart-1" onclick="addToCart(1)">
-                    <span class="btnn" aria-hidden="true"></span> ADD TO CART
-                </button>
-
-            </div><div class="dishes">
-                <img src="images/dishes/main/biryani.jpg" class="dish">
-                <br><br>
-                <p class="dishname"> Chicken Biryani</p>
-                <p class="dishprice"> ₹200 </p>
-                <p class="available"> Available: 20</p>
-                <input type="number" class="num">
-                <br><br>
-                <button type="button" class="btn btnn" id="addToCart-1" onclick="addToCart(1)">
-                    <span class="btnn" aria-hidden="true"></span> ADD TO CART
-                </button>
-
-            </div>
-            <div class="dishes">
-                <img src="images/dishes/main/biryani.jpg" class="dish">
-                <br><br>
-                <p class="dishname"> Chicken Biryani</p>
-                <p class="dishprice"> ₹200 </p>
-                <p class="available"> Available: 20</p>
-                <input type="number">
-                <br><br>
-                <button type="button" class="btn btnn" id="addToCart-1" onclick="addToCart(1)">
-                    <span class="btnn" aria-hidden="true"></span> ADD TO CART
-                </button>
-
-            </div>
-
-
-            </div>
-        </div>
-
-
-
+         </div>
+ 
+ 
 
 
 
@@ -199,7 +123,7 @@
         })
 
         function addToCart(id) {
-            
+
             var addToCartButton = document.getElementById("addToCart-" + id);
             document.getElementById("addToCart-" + id).innerHTML = "";
             document.getElementById("addToCart-" + id).innerHTML = "Added";
