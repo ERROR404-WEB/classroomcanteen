@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Smooch&display=swap');
+  @import "./fontawesome/scss/fontawesome.scss";
+  @import "./fontawesome/scss/solid.scss";
+  @import "./fontawesome/scss/brands.scss";
+  
+  a{
+     text-decoration: none;
+     color:#fff;
+  }
+  #preloader{
+   top:0%;
+   background: #000 url(../images/preloader.gif) no-repeat center;
+   height: 100vh;
+   width: 102%;
+   position:fixed;
+   z-index:100;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .pretext{
+   margin-top:30%;
+   margin-left: 10px;
+   color:rgba(255, 251, 0, 0.893);
+   font-size: 1.5rem;
+   font-family: 'Staatliches', cursive;
+   animation: gloww infinite 2s;
+  }
+  @keyframes gloww{
+   20%{
+     text-shadow:0px 0px 15px rgba(255, 251, 0, 0.893);
+     transform:scale(1.02);
+  
+   }
+  }
+  
+  
+  
+  body{
+     background:url(../images/wall5.jpg);
+     height:100vh;
+     background-size:cover;
+     background-repeat: no-repeat; 
+  }
+  .overlay{
+     background: rgba(0, 0, 0, 0.3); 
+     height: 100vh;
+  }
+  .nav-link{
+     font-weight: bold;
+  }
+  ::-webkit-scrollbar {
+     display: none;
+     }
+  .logo{
+     width:15rem;
+  }
+  .logo:hover{
+     transition:.5s;
+     filter: drop-shadow(0px 0px 5px #ffee10);
+  }
+  .navv{
+     
+     width: 100%;
+     height:6rem;
+     background-color: rgba(0, 0, 0, 0.5);
+     font-family: 'Staatliches', cursive;
+  }
+  ul li a{
+     transition: 1.5s;
+     color:#ffffff;
+     
+  }
+   
+   ul li a:hover::before {
+     transform: scale(1.1);
+     transition: 1.5s;
+     box-shadow: 0 0 15px #ffee10;
+   }
+   
+   ul li a:hover {
+     color: #ffffff;
+     transition: .5s;
+     box-shadow: 0 0 5px #ffee10;
+     transform: scale(1.1);
+     text-shadow: 0 0 5px #ffffff;
+   }
+  
+  .loginform{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-family: 'Staatliches', cursive;
+  }
+   .formm form{
+    box-shadow:0px 0px 20px rgb(0, 0, 0);
+    background-color: rgba(88, 80, 80, 0.202);
+  
+    margin-top: 10%;
+   }
+   .formm input{
+    background-color: rgba(255, 255, 255, 0.39);
+    color: black;
+   }
+   .formm input:focus {
+    background-color: rgba(0, 0, 0, 0.13);
+    box-shadow: 0 0 10px #ffff;
+    color:#000;
+    border-color:none;
+   }
+   .textt{
+    color: black;
+   }
+   @media(max-width:760px)
+   {
+   .formm form{
+    margin-top: 40%;
+    margin-left: 5%;
+   }
+   .formm form{
+    width:90%;
+   }
+  
+   }
+   .shadowbl{
+    color: white;
+    font-weight: 600;
+      text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.577);
+  
+   }
+   .buttonnn {
+    box-shadow:0px 0px 10px white;
+   color: white;
+    border: none;
+    border-color: none;
+   }
+  .formm a{
+    color: white;
+  }
+   
+   .formm .btnn a:hover{
+    background-color: rgba(255,255,255,0.13);
+    color: black;
+    box-shadow:0px 0px 10px white;
+   }
